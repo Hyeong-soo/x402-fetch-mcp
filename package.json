@@ -1,0 +1,47 @@
+{
+  "name": "x402-fetch-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for x402 payment protocol - enables AI agents to pay for content automatically",
+  "main": "index.js",
+  "bin": {
+    "x402-fetch-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "x402",
+    "ai-agent",
+    "payments",
+    "usdc",
+    "base",
+    "claude",
+    "anthropic",
+    "model-context-protocol"
+  ],
+  "author": "SerenDB",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hyeong-soo/x402-fetch-mcp"
+  },
+  "homepage": "https://learn402.xyz",
+  "bugs": {
+    "url": "https://github.com/Hyeong-soo/x402-fetch-mcp/issues"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "viem": "^2.44.4",
+    "x402-fetch": "^1.1.0"
+  }
+}
