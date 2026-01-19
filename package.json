@@ -1,47 +1,52 @@
 {
   "name": "x402-fetch-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for x402 payment protocol - enables AI agents to pay for content automatically",
+  "version": "1.2.0",
+  "description": "MCP server for x402 payment protocol - enables AI agents to access paywalled content automatically",
+  "type": "module",
   "main": "index.js",
   "bin": {
-    "x402-fetch-mcp": "./index.js"
+    "x402-fetch-mcp": "index.js",
+    "x402-fetch-mcp-setup": "setup.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "setup": "node setup.js"
   },
   "keywords": [
-    "mcp",
     "x402",
+    "mcp",
+    "model-context-protocol",
+    "payment",
     "ai-agent",
-    "payments",
+    "claude",
+    "micropayments",
     "usdc",
     "base",
-    "claude",
-    "anthropic",
-    "model-context-protocol"
+    "ethereum"
   ],
-  "author": "SerenDB",
+  "author": "Hyeong-soo",
   "license": "MIT",
-  "type": "module",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hyeong-soo/x402-fetch-mcp"
+    "url": "https://github.com/Hyeong-soo/x402-learn-kr.git",
+    "directory": "x402-fetch-mcp"
   },
   "homepage": "https://learn402.xyz",
   "bugs": {
-    "url": "https://github.com/Hyeong-soo/x402-fetch-mcp/issues"
+    "url": "https://github.com/Hyeong-soo/x402-learn-kr/issues"
   },
   "files": [
     "index.js",
-    "README.md",
-    "LICENSE"
+    "setup.js",
+    "README.md"
   ],
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.25.2",
-    "viem": "^2.44.4",
-    "x402-fetch": "^1.1.0"
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@x402/evm": "^2.2.0",
+    "@x402/fetch": "^2.2.0",
+    "viem": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
